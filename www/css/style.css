@@ -1,1 +1,63 @@
 /* Empty. Add your own CSS if you like */
+.bar-menu{
+  height: 100px;
+}
+.bar-menu img{
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+}
+.bar-menu span{
+  padding:10px;
+  padding-top:22px;
+}
+.bar-menu-content{
+  top: 100px;
+}
+
+.outer  .jam-kerja{
+  border: 1px solid;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  float: left;
+  font-size: 20pt !important;
+  padding-top: 12px;
+  margin-top: 7px;
+
+}
+span.danger{
+  background-color: #FF4856;
+  border-color: #FF5B43;
+}
+span.sucess{
+  background-color: #3CFFBB;
+  border-color: #68E884;
+}
+
+.align-left{
+  padding-left: 70px;
+}
+
+p.small{
+  font-size: 9pt !important;
+}
+p.big{
+  font-size: 12pt !important;
+}
+
+.outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+}

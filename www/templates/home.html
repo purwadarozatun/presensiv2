@@ -1,8 +1,17 @@
 <ion-view view-title="Presensi Home">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="people in peoples" href="#/app/playlists/{{playlist.id}}">
-        {{people.title}}
+      <ion-item ng-repeat="people in users" class="outer">
+        <div class="inner">
+          <span class="jam-kerja" ng-class="{ 'danger': people.terlambat, 'success': people.terlambat == false }">
+            {{ people.duration_hour ? people.duration_hour : "0"}}
+          </span>
+        </div>
+        <div class="inner align-left">
+              <p class="big">{{people.absensi_nama_lengkap}}</p>
+              <p class="small" ng-show="people.absensi_masuk">Jam Masuk : {{people.absensi_masuk}}</p>
+              <p class="small" ng-show="people.absensi_keluar">Jam Keluar : {{people.absensi_keluar}}</p>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
